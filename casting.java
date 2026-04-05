@@ -17,7 +17,8 @@ public class casting {
 //		a obj=(a)new b();                      //this is called upcasting this is implicit
 //		obj.show1();
 		a obj=(a)new b();
-		obj.show2();
+		b obj2=(b)obj; //down casting
+		obj2.show2();
 		
 	}
 }
