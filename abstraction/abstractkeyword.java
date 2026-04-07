@@ -1,5 +1,6 @@
 //for abstarct class we cannot instantiate the abstarct class
 //2.for abstarct method the derived class should/must have abstractg method
+package abstraction;
 
 abstract class Car
 {
