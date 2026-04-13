@@ -1,4 +1,4 @@
-package Threads;
+package ThreadGarbageFiles;
 
 public class Mythread extends Thread {
 	@Override

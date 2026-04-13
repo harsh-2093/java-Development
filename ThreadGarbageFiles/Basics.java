@@ -1,4 +1,4 @@
-package Threads;
+package ThreadGarbageFiles;
 
 public class Basics {
 	public static void main(String[] args) {

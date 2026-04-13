@@ -1,4 +1,4 @@
-package Threads;
+package ThreadGarbageFiles;
 
 public class World implements Runnable {
 	@Override

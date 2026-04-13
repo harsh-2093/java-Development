@@ -1,4 +1,4 @@
-package Threads;
+package ThreadGarbageFiles;
 
 class A extends Thread
 {

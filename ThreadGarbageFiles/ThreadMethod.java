@@ -1,4 +1,4 @@
-package Threads;
+package ThreadGarbageFiles;
 
 public class ThreadMethod extends Thread {
 	public ThreadMethod(String name)
@@ -18,9 +18,24 @@ public class ThreadMethod extends Thread {
 //			}
 //			System.out.println(i);
 //		}
-		for(int i=0;i<=5;i++) {
-			System.out.println(Thread.currentThread().getName()+" Priority "+Thread.currentThread().getPriority());
+//		for(int i=0;i<=5;i++) {
+//			System.out.println(Thread.currentThread().getName()+" Priority "+Thread.currentThread().getPriority());
+			
+//			try
+//			{
+//				Thread.sleep(1000);
+//				System.out.println(Thread.currentThread().getName()+"it is sleeing");
+//			}
+//			catch(Exception e)
+//			{
+//				System.out.println(Thread.currentThread().getName()+"is interrupted"+e);
+//			}
+		for(int i=0;i<=5;i++) 
+		{
+			System.out.println(Thread.currentThread().getName()+"runing");
+			Thread.yield();
 		}
+//		}
 	}
 	public static void main(String[] args) throws InterruptedException {
 //		ThreadMethod t1=new ThreadMethod();

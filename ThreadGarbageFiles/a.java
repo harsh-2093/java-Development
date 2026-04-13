@@ -1,4 +1,4 @@
-package Threads;
+package ThreadGarbageFiles;
 
 public class a extends b implements Runnable {
 
