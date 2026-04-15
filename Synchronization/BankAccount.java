@@ -26,7 +26,7 @@ public class BankAccount extends Thread {
 					}
 					catch(Exception e)
 					{
-						
+						Thread.currentThread().interrupt();
 					}
 					finally
 					{
@@ -45,7 +45,7 @@ public class BankAccount extends Thread {
 		}
 		catch(Exception e)
 		{
-			
+			Thread.currentThread().interrupt();
 		}
 
 	}
