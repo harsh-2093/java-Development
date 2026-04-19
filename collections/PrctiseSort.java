@@ -2,37 +2,68 @@ package collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
+// import java.util.Comparator;
 import java.util.List;
+class Student implements Comparable<Student>
+{
+  int age;
+  String name;
+  
+
+
+  public Student(int age, String name) {
+    this.age = age;
+    this.name = name;
+  }
+
+
+
+  @Override
+  public String toString() {
+    return "Student [age=" + age + ", name=" + name + "]";
+  }
+
+  public int compareTo(Student that){
+    if(this.age>that.age)
+    {
+    return 1;
+    }
+    else{
+      return -1;
+    }
+  }
+
+  
+}
+
 
 public class PrctiseSort {
   public static void main(String[] args) {
-    List <String> l1=new ArrayList<>();
-    Comparator<String> com=new Comparator <String>()
+    List <Student> l1=new ArrayList<>();
+    // Comparator<Student> com=new Comparator <Student>()
+    // {
+    //   public int compare(Student i,Student j)
+    //   {
+    //     if(i.age>j.age)
+    //     {
+    //       return 1;
+    //     }
+    //     else{
+    //       return -1;
+    //     }
+    //   }
+    // };
+
+    l1.add(new Student(23, "harsh"));
+    l1.add(new Student(23, "kaniskha"));
+    l1.add(new Student(19,"isha"));
+    l1.add(new Student(32, "ishika"));
+    l1.add(new Student(34,"gauri"));
+    Collections.sort(l1);
+
+    for(Student e:l1)
     {
-      public int compare(String i,String j)
-      {
-        if(i.length()>j.length())
-        {
-          return 1;
-        }
-        else{
-          return -1;
-        }
-      }
-    };
-
-    l1.add("harsh");
-    l1.add("harshq");
-    l1.add("harsjqw");
-    l1.add("h");
-    l1.add("he");
-
-    Collections.sort(l1,com);
-
-    for(String e:l1)
-    {
-      System.out.println(e);
+      System.out.println(e.toString());
     }
   }
 }
